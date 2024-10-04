@@ -1,0 +1,68 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e0af65;
+    margin: 0;
+  }
+  
+  .flower {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    animation: rotateFlower 6s infinite linear;
+  }
+  
+  .petal {
+    width: 60px;
+    height: 60px;
+    background-color: #eaf821;
+    border-radius: 50%;
+    position: absolute;
+  }
+  
+  .petal1 {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .petal2 {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+  
+  .petal3 {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .petal4 {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  
+  .center {
+    width: 50px;
+    height: 50px;
+    background-color: #945b05;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  @keyframes rotateFlower {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
